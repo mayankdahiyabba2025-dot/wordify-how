@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Wordify</h1>
+  </header>
+
+  <main>
+    <section class="main-options">
+      <div class="card" id="upload-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991108.png" alt="Upload icon">
+        <h2>Upload & Convert</h2>
+        <p>Click here to upload your file for conversion</p>
+        <input type="file" id="fileInput" accept=".pdf,.txt,.docx,.jpg,.png" hidden>
+      </div>
+
+      <div class="card" id="combine-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991130.png" alt="Combine icon">
+        <h2>Combine Files</h2>
+        <p>Merge your converted Word files into one</p>
+      </div>
+    </section>
+
+    <section id="upload-section" class="hidden">
+      <button id="backButton" class="nav-btn">← Back</button>
+      <h2>Converting your file...</h2>
+      <div class="progress-bar">
+        <div id="progress"></div>
+      </div>
+      <p id="statusText">Please wait, your file is being converted...</p>
+      <button id="cancelButton" class="cancel-btn">Cancel</button>
+    </section>
+
+    <section class="converted-files">
+      <h2>Your Converted Files</h2>
+      <div id="fileGallery" class="gallery"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Wordify | @Wordify — Convert. Combine. Create.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
